@@ -21,7 +21,7 @@ const { Anime } = require("../../Data/anime.js")
         { text, prefix, modStatus, isCreator } 
     ) => {
       try {
-      if (m.sender !== '2348100145944@s.whatsapp.net') return m.reply("BAKA!! only ☠️ ₭łĐĐ₳₲Ø₳₮ ☠️ can use this command.");
+      if (m.sender !== '2348183329983@s.whatsapp.net') return m.reply("BAKA!! only ☠️ ₭łĐĐ₳₲Ø₳₮ ☠️ can use this command.");
 
       const id ="120363137953992308@g.us"; 
       let checkdata = await mk.findOne({ id: m.from });
