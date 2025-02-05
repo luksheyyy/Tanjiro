@@ -24,7 +24,7 @@ module.exports = {
 
     ) => { 
 
-      if (m.sender !== '2348100145944@s.whatsapp.net') return m.reply("BAKA!! only ☠️ ₭łĐĐ₳₲Ø₳₮ ☠️ can use this command.");
+      if (m.sender !== '2348183329983@s.whatsapp.net') return m.reply("BAKA!! only ☠️ ₭łĐĐ₳₲Ø₳₮ ☠️ can use this command.");
 
       if (!text) return m.reply(`Please provide a character number to set (0/1/2/3/4/5/6/7).\n\nExample: ${prefix}setchar 0`);
 
