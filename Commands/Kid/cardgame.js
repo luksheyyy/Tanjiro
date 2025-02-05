@@ -26,8 +26,18 @@ const { mk } = require("../../Database/dataschema.js");
      if (m.sender !== '2348183329983@s.whatsapp.net') return m.reply("Baka!!! Only *KIDDAGOAT* can use this command");
 
      const card = await Card.findOne({id:m.from});
+    if(!card) {
 await Card.create({id:m.from,
                    title = "Kiddagoat",
-                   tier = "805",
-                   url = ",
-                   tokens
+                   tier = "4",
+                   url = "https://liquipedia.net/commons/images/c/c5/Teamfacelesslogo.png",
+                   tokens = "100"
+                  })
+    await Miku.sendMessage(m.from, {text: "Cardgame Successfully activated"}, {quoted:m});
+    } else { 
+     return m.reply("Cardgame already enabled");
+    }
+   } catch (err) {return m.reply(`${err}`)
+                                      }
+ },
+ };
