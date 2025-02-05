@@ -28,10 +28,10 @@ const { mk } = require("../../Database/dataschema.js");
      const card = await Card.findOne({id:m.from});
     if(!card) {
 await Card.create({id:m.from,
-                   title = "Kiddagoat",
-                   tier = "4",
-                   url = "https://liquipedia.net/commons/images/c/c5/Teamfacelesslogo.png",
-                   tokens = "100"
+                   title: "Kiddagoat",
+                   tier: "4",
+                   url: "https://liquipedia.net/commons/images/c/c5/Teamfacelesslogo.png",
+                   tokens: "100"
                   })
     await Miku.sendMessage(m.from, {text: "Cardgame Successfully activated"}, {quoted:m});
     } else { 
