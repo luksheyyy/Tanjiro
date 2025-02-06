@@ -178,7 +178,7 @@ module.exports = async (Miku, m, commands, chatUpdate, store) => {
 
     const isSenpai = global.senpai.includes(m.sender);
 
-    global.suppL = `_\n\n*🐉Support group🐉*\nhttps://chat.whatsapp.com/IQ5kmZyYtKj1WxHAZHE3Ee_\n\n*🌀Casino group🌀*\nhttps://chat.whatsapp.com/FmqPHOssx8J23hpkT0da1x\n\n`
+    global.suppL = `_\n\n*🐉Support group🐉*\nhttps://chat.whatsapp.com/H3Bxzb2ntxU8I1MevUxmuF\n\n*🌀Casino group🌀*\nhttps://chat.whatsapp.com/GrcB0ENAEI9A4oj2k0fg6I\n\n`
 
     const isCmd = body.startsWith(prefix);
 
