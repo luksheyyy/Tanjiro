@@ -8,9 +8,9 @@ module.exports = {
   start: async (
     Miku,
     m,
-    { text, prefix, isAdmin, participants, args }
+    { text, prefix, isAdmin, participants, args, isCreator }
   ) => {
-    if (!isAdmin)
+    if (!isAdmin && !isCreator)
       return m.reply(mess.useradmin);
 
       var message = "*『 Attention Here 』*";
