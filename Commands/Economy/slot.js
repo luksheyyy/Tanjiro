@@ -48,7 +48,8 @@ module.exports = {
           const cara = "cara"
           const k = 500
           const balance1  = await eco.balance(user, cara)
-          
+
+        if (value > balance1.wallet) return m.reply("You cant slot what you dont have");
           if (k > balance1.wallet) return m.reply(`You are going to be spinning on your wallet, you need at least 💵500`);
           if (!gg) { return m.reply("Provide an amount to slot");
           };
