@@ -8,9 +8,9 @@ module.exports = {
    start: async ( 
      Miku, 
      m, 
-     { text, prefix, isBotAdmin, isAdmin, participants, args } 
+     { text, prefix, isBotAdmin, isAdmin, participants, args, isCreator } 
    ) => { 
-     if (!isAdmin) 
+     if (!isAdmin && !isCreator) 
        return m.reply("user and bot must be admin"); 
   
      let message = args 
