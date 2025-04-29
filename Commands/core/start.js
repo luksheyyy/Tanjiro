@@ -19,10 +19,10 @@ module.exports = {
       { buttonId: ${balance},
     buttonText: { displayText: "🪙Current $ROY Balance"}
     }
-    ]
+    ]`
         if(!user){
             await player.create({id:m.sender, inventory: {walletbal: 0, ref: 0, level: 0, miner: 0 }});
-            Miku.sendMessage(m.from, { text: text }, { quoted: m });
+            Miku.sendMessage(m.from, { text: text1 }, { quoted: m });
         } else {
             Miku.sendMessage(m.from, { text: *🪙 You are already a user of the whadrop bot*
 }, { quoted: m });
